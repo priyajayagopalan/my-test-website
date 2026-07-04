@@ -1,0 +1,16 @@
+{
+  "name": "pixel-test-server",
+  "version": "1.0.0",
+  "description": "Web server for testing tracking pixel locally",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["pixel", "tracking"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
