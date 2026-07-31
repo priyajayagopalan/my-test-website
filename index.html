@@ -1,14 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Pixel Test</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrimeNest Realty — Find Your Dream Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+ <!-- begin Pixel Code -->
 <script
-  src="https://staging.compass.com/cxlp/a.min.js"
+  src="https://staging.homeplatform.com/cxlp/a.min.js"
   id="cxlp-ajs"
-  data-client-id="r804a7035rxv"
+  data-client-id="qtc6habfjzi4"
   async
 ></script>
+<!-- end Pixel Code -->
 </head>
 <body>
-    <h1>Testing My Tracking Pixel Locally</h1>
+
+  <!-- ========== HEADER / NAVBAR ========== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <svg class="logo__icon" viewBox="0 0 32 32" width="32" height="32" fill="none">
+          <path d="M16 2L2 14h4v14h8v-8h4v8h8V14h4L16 2z" fill="currentColor"/>
+        </svg>
+        <span>PrimeNest</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#listings" class="nav__link">Listings</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#inquiry" class="nav__link">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <p class="hero__tag">Trusted by 2,000+ homeowners</p>
+      <h1 class="hero__title">Discover Your<br>Perfect Home</h1>
+      <p class="hero__sub">Browse premium properties in the most sought-after neighborhoods. Your dream home is just a click away.</p>
+      <div class="hero__actions">
+        <a href="#listings" class="btn btn--primary">Browse Listings</a>
+        <a href="#inquiry" class="btn btn--outline">Get in Touch</a>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__number">450+</span>
+          <span class="stat__label">Properties Sold</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">12</span>
+          <span class="stat__label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">98%</span>
+          <span class="stat__label">Happy Clients</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LISTINGS ========== -->
+  <section class="listings" id="listings">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__tag">Featured Properties</p>
+        <h2 class="section-header__title">Explore Our Latest Listings</h2>
+      </div>
+
+      <div class="listings__grid">
+
+        <!-- Listing 1 -->
+        <article class="card">
+          <div class="card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop" alt="Modern Family Villa" class="card__img" loading="lazy">
+            <span class="card__badge">Featured</span>
+          </div>
+          <div class="card__body">
+            <div class="card__price">$1,250,000</div>
+            <h3 class="card__title">Modern Family Villa</h3>
+            <p class="card__address">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              742 Evergreen Terrace, Beverly Hills, CA
+            </p>
+            <div class="card__meta">
+              <span>4 Beds</span>
+              <span>3 Baths</span>
+              <span>3,200 sqft</span>
+            </div>
+            <a href="#inquiry" class="btn btn--sm btn--primary">Inquire Now</a>
+          </div>
+        </article>
+
+        <!-- Listing 2 -->
+        <article class="card">
+          <div class="card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" alt="Luxury Penthouse Suite" class="card__img" loading="lazy">
+            <span class="card__badge card__badge--new">New</span>
+          </div>
+          <div class="card__body">
+            <div class="card__price">$2,450,000</div>
+            <h3 class="card__title">Luxury Penthouse Suite</h3>
+            <p class="card__address">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              1200 Skyline Blvd, Manhattan, NY
+            </p>
+            <div class="card__meta">
+              <span>3 Beds</span>
+              <span>2 Baths</span>
+              <span>2,100 sqft</span>
+            </div>
+            <a href="#inquiry" class="btn btn--sm btn--primary">Inquire Now</a>
+          </div>
+        </article>
+
+        <!-- Listing 3 -->
+        <article class="card">
+          <div class="card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&h=400&fit=crop" alt="Charming Suburban Home" class="card__img" loading="lazy">
+          </div>
+          <div class="card__body">
+            <div class="card__price">$685,000</div>
+            <h3 class="card__title">Charming Suburban Home</h3>
+            <p class="card__address">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              58 Maple Drive, Pasadena, CA
+            </p>
+            <div class="card__meta">
+              <span>3 Beds</span>
+              <span>2 Baths</span>
+              <span>1,850 sqft</span>
+            </div>
+            <a href="#inquiry" class="btn btn--sm btn--primary">Inquire Now</a>
+          </div>
+        </article>
+
+        <!-- Listing 4 -->
+        <article class="card">
+          <div class="card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&h=400&fit=crop" alt="Oceanfront Estate" class="card__img" loading="lazy">
+            <span class="card__badge">Featured</span>
+          </div>
+          <div class="card__body">
+            <div class="card__price">$3,900,000</div>
+            <h3 class="card__title">Oceanfront Estate</h3>
+            <p class="card__address">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              9 Pacific Coast Hwy, Malibu, CA
+            </p>
+            <div class="card__meta">
+              <span>5 Beds</span>
+              <span>4 Baths</span>
+              <span>4,500 sqft</span>
+            </div>
+            <a href="#inquiry" class="btn btn--sm btn--primary">Inquire Now</a>
+          </div>
+        </article>
+
+        <!-- Listing 5 -->
+        <article class="card">
+          <div class="card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=600&h=400&fit=crop" alt="Contemporary Townhouse" class="card__img" loading="lazy">
+            <span class="card__badge card__badge--new">New</span>
+          </div>
+          <div class="card__body">
+            <div class="card__price">$920,000</div>
+            <h3 class="card__title">Contemporary Townhouse</h3>
+            <p class="card__address">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              320 Urban Row, Austin, TX
+            </p>
+            <div class="card__meta">
+              <span>3 Beds</span>
+              <span>2.5 Baths</span>
+              <span>2,000 sqft</span>
+            </div>
+            <a href="#inquiry" class="btn btn--sm btn--primary">Inquire Now</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <div class="about__text">
+        <p class="section-header__tag">Why PrimeNest</p>
+        <h2 class="section-header__title">Your Trusted Real Estate Partner</h2>
+        <p>With over 12 years of experience in the real estate market, PrimeNest Realty has helped thousands of families find their perfect home. Our dedicated team of agents combines local market expertise with personalized service to make your property journey seamless.</p>
+        <div class="about__features">
+          <div class="about__feature">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <div>
+              <strong>Verified Listings</strong>
+              <p>Every property is personally inspected and verified by our team.</p>
+            </div>
+          </div>
+          <div class="about__feature">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div>
+              <strong>Secure Transactions</strong>
+              <p>End-to-end support with legal and financial guidance.</p>
+            </div>
+          </div>
+          <div class="about__feature">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            <div>
+              <strong>Expert Agents</strong>
+              <p>Our seasoned professionals know every neighborhood inside out.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about__img-wrap">
+        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=700&fit=crop" alt="Real estate agent" class="about__img" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INQUIRY FORM ========== -->
+  <section class="inquiry" id="inquiry">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <p class="section-header__tag">Get in Touch</p>
+        <h2 class="section-header__title">Schedule a Property Tour or Ask a Question</h2>
+        <p class="section-header__desc">Fill out the form below and one of our agents will get back to you within 24 hours.</p>
+      </div>
+
+      <form class="inquiry__form" id="inquiryForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required placeholder="John">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" required placeholder="Doe">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="property">Property of Interest</label>
+          <select id="property" name="property">
+            <option value="">— Select a property —</option>
+            <option value="modern-family-villa">Modern Family Villa — $1,250,000</option>
+            <option value="luxury-penthouse">Luxury Penthouse Suite — $2,450,000</option>
+            <option value="suburban-home">Charming Suburban Home — $685,000</option>
+            <option value="oceanfront-estate">Oceanfront Estate — $3,900,000</option>
+            <option value="contemporary-townhouse">Contemporary Townhouse — $920,000</option>
+            <option value="other">Other / General Inquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="5" required placeholder="I'd like to schedule a tour for…"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg">Send Inquiry</button>
+      </form>
+
+      <div class="inquiry__success" id="inquirySuccess" hidden>
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <h3>Thank You!</h3>
+        <p>Your inquiry has been submitted. One of our agents will reach out to you shortly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="logo logo--light">
+          <svg class="logo__icon" viewBox="0 0 32 32" width="28" height="28" fill="none">
+            <path d="M16 2L2 14h4v14h8v-8h4v8h8V14h4L16 2z" fill="currentColor"/>
+          </svg>
+          <span>PrimeNest</span>
+        </a>
+        <p>Making real estate simple, transparent, and rewarding since 2014.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Quick Links</h4>
+        <a href="#listings">Listings</a>
+        <a href="#about">About Us</a>
+        <a href="#inquiry">Contact</a>
+      </div>
+      <div class="footer__links">
+        <h4>Contact Info</h4>
+        <p>123 Realty Lane, Suite 400<br>Los Angeles, CA 90001</p>
+        <p>(310) 555-0199</p>
+        <p>hello@primenest.com</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 PrimeNest Realty. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
